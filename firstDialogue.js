@@ -10,15 +10,10 @@ function preload() {
 
 function setup() {
   createCanvas(900, 632);
-  image(saloonEntrance, 0, 0);
+  image(dialogue1, 0, 0);
+
 }
 
 function draw() {
   // background(125);
 }
-
-function mousePressed() {
-  location.assign("index2.html"); 
-  
-}
-
