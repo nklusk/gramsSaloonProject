@@ -3,7 +3,7 @@ let dialogue1;
 
 function preload() {
 
-  dialogue1 = loadImage("assets/gramDialogue1.png");
+  dialogue1 = loadImage("assets/gramDialogue2.png");
 
 }
 
@@ -19,7 +19,7 @@ function draw() {
 }
 
 function mousePressed() {
-    location.assign("secondDialogue.html"); 
+    location.assign("ATMinterface.html"); 
     
   }
   

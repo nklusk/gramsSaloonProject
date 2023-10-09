@@ -2,16 +2,13 @@ let saloonEntrance;
 let dialogue1;
 
 function preload() {
-
-  dialogue1 = loadImage("assets/gramDialogue1.png");
-
+  saloonEntrance = loadImage("assets/gramsSaloonEntrance.png");
 }
 
 
 function setup() {
   createCanvas(900, 632);
-  image(dialogue1, 0, 0);
-
+  image(saloonEntrance, 0, 0);
 }
 
 function draw() {
@@ -19,7 +16,7 @@ function draw() {
 }
 
 function mousePressed() {
-    location.assign("secondDialogue.html"); 
-    
-  }
+  location.assign("firstDialogue.html"); 
   
+}
+

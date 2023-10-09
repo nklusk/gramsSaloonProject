@@ -18,7 +18,7 @@ function draw() {
 }
 
 function mousePressed() {
-  location.assign("index2.html"); 
+  location.assign("firstDialogue.html"); 
   
 }
 
