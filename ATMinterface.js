@@ -2,7 +2,7 @@ let ATMinterface;
 let randomAd;
 let watchAd;
 let displayImage;
-let totalAttens = 0;
+let totalAttens = 1;
 let displayAttens;
 let attensDiv;
 

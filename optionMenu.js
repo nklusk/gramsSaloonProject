@@ -1,16 +1,40 @@
-
+let payGram;
+let backToATM;
+let getOut;
 
 function setup() {
   noCanvas();
   createImg('assets/gramOptionMenu.png');
+  payGram = createButton("pay gram");
+  backToATM = createButton("back to atm");
+  getOut = createButton("get out of this estapplishment")
+
+payGram.mouseClicked(payGramClicked);
+backToATM.mouseClicked(backToATMclicked);
+getOut.mouseClicked(getOutClicked);
 }
 
 function draw() {
-  // background(125);
+    payGram.position(51, 290)
+    payGram.size(276, 79)
+
+    backToATM.position(51, 402)
+    backToATM.size(338, 79)
+
+    getOut.position(51, 511)
+    getOut.size(412, 79)
+
 }
 
-function mousePressed() {
-  location.assign("firstDialogue.html"); 
-  
+function payGramClicked(){
+    location.assign('gramGivesImage.html')
+
 }
 
+function backToATMclicked(){
+    location.assign('ATMinterface.html')
+}
+
+function getOutClicked(){
+    location.assign('saloonEntrance.html')
+}
