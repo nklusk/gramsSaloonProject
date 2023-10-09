@@ -6,3 +6,9 @@ html, body {
 canvas {
   display: block;
 }
+
+#attens {
+  padding: 20px;
+  color: white;
+  font-size: xxx-large;
+}
