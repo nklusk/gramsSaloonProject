@@ -3,6 +3,7 @@ let dialogue1;
 let randomAd;
 let watchAd;
 let displayImage;
+let totalAttens;
 
 function preload() {
 
@@ -12,11 +13,12 @@ function preload() {
 
 
 function setup() {
-    displayImage = image(randomAd, 506, 67)
+watchAd = createButton("watch ad");
+totalAttens = 0
   createCanvas(900, 632);
   image(ATMinterface, 0, 0);
-  watchAd = createButton("watch ad");
-  watchAd.mousePressed(displayImage);
+  
+  watchAd.mouseClicked(clicked);
 
 }
 
@@ -27,4 +29,9 @@ function draw() {
   watchAd.size(346, 89);
 }
 
+function clicked(){
+    image(randomAd, 506, 67);
+    console.log(clicks);
+
+}
   
