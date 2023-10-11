@@ -57,7 +57,7 @@ function watchAdclicked() {
     attensDiv.html(totalAttens);
     totalAttens += 1
 
-    randomNumber = floor(random(1,5))
+    randomNumber = floor(random(1,6))
     shownAd = createImg("assets/gramAd"+randomNumber+".png");
     shownAd.position(506, 67);
 }
@@ -69,3 +69,4 @@ location.assign('thirdDialogue.html');
 
 
 }
+

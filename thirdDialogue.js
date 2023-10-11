@@ -1,6 +1,7 @@
 let dialogue3;
 let totalAttens;
 
+
 function setup() {
   
   createImg("assets/gramDialogue3.png");

@@ -1,6 +1,8 @@
+
 let payGram;
 let backToATM;
 let getOut;
+
 
 function setup() {
   noCanvas();
