@@ -38,5 +38,5 @@ function backToATMclicked(){
 }
 
 function getOutClicked(){
-    location.assign('saloonEntrance.html')
+    location.assign('index.html')
 }
