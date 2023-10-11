@@ -19,7 +19,7 @@ function draw() {
 }
 
 function mousePressed() {
-    location.assign("secondDialogue.html" +'?'+totalAttens); 
+    location.assign("secondDialogue.html"); 
     
   }
   

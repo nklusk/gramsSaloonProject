@@ -2,9 +2,17 @@
 let payGram;
 let backToATM;
 let getOut;
+let totalAttens;
+let url;
 
 
 function setup() {
+    url = getURL()
+    
+    
+    totalAttens = url.substr(-1);
+    console.log(totalAttens);
+    console.log(url)
   noCanvas();
   createImg('assets/gramOptionMenu.png');
   payGram = createButton("pay gram");

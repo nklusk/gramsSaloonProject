@@ -3,8 +3,16 @@ let noButton;
 let sampleGramPic;
 let sampleGramPic2;
 let randomNumber;
+let totalAttens;
+let url;
 
 function setup() {
+  url = getURL()
+  
+  
+  totalAttens = url.substr(-1);
+  console.log(totalAttens);
+  console.log(url)
 
     createImg("assets/gramShowsImageMenu.png");
     sampleGramPic = createImg("assets/sampleGramPic.png");
@@ -38,5 +46,11 @@ function setup() {
 sampleGramPic2 = createImg("assets/gramPic"+randomNumber+".png");
     sampleGramPic2.position(504, 89);
     console.log(randomNumber);
+    totalAttens -= 1
+    console.log(totalAttens)
+
+if(totalAttens <1){
+  location.assign("noAttens.html" +'?'+totalAttens);
+}
 
   }

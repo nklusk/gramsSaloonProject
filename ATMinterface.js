@@ -17,6 +17,7 @@ let backToGramPage;
 
 
 function setup() {
+    
     createImg("assets/ATMinterface.png");
    
     backToGram = createButton("back to gram")
@@ -61,6 +62,10 @@ function watchAdclicked() {
     randomNumber = floor(random(1,6))
     shownAd = createImg("assets/gramAd"+randomNumber+".png");
     shownAd.position(506, 67);
+
+    if (totalAttens = 9){
+        location.assign('thirdDialogue.html' +'?'+totalAttens);
+    }
 }
 
 function backToGramClicked() {
