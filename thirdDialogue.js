@@ -1,8 +1,10 @@
 let dialogue3;
+let totalAttens;
 
 function setup() {
-  createCanvas(900, 632);
+  
   createImg("assets/gramDialogue3.png");
+  console.log(totalAttens);
 }
 
 function draw() {

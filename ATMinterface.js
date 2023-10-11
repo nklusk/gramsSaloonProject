@@ -2,10 +2,11 @@ let ATMinterface;
 let randomAd;
 let watchAd;
 let displayImage;
-let totalAttens = 1;
+var totalAttens;
 let displayAttens;
 let attensDiv;
-
+let randomNumber;
+let shownAd;
 
 // function preload() {
 
@@ -16,15 +17,15 @@ let attensDiv;
 
 function setup() {
     createImg("assets/ATMinterface.png");
-    let ad = createImg("assets/gramAd1.png");
-    ad.position(506, 67);
+   
     backToGram = createButton("back to gram")
     watchAd = createButton("watch ad");
-    totalAttens = 0;
+    totalAttens = 1;
     attensDiv = createDiv();
     attensDiv.position(230 ,500);
     attensDiv.id("attens");
-
+    
+ 
     noCanvas();
     //createCanvas(900, 632);
     //image(ATMinterface, 0, 0);
@@ -56,10 +57,15 @@ function watchAdclicked() {
     attensDiv.html(totalAttens);
     totalAttens += 1
 
+    randomNumber = floor(random(1,5))
+    shownAd = createImg("assets/gramAd"+randomNumber+".png");
+    shownAd.position(506, 67);
 }
 
 function backToGramClicked() {
     //location.assign('secondDialogue.html?attens=' + totalAttens);
 location.assign('thirdDialogue.html');
+
+
 
 }
