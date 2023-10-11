@@ -63,7 +63,7 @@ function watchAdclicked() {
     shownAd = createImg("assets/gramAd"+randomNumber+".png");
     shownAd.position(506, 67);
 
-    if (totalAttens = 9){
+    if (totalAttens == 9){
         location.assign('thirdDialogue.html' +'?'+totalAttens);
     }
 }
