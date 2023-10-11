@@ -29,14 +29,14 @@ function draw() {
 }
 
 function payGramClicked(){
-    location.assign('gramGivesImage.html')
+    location.assign('gramGivesImage.html' +'?'+totalAttens)
 
 }
 
 function backToATMclicked(){
-    location.assign('ATMinterface.html')
+    location.assign('ATMinterface.html' +'?'+totalAttens)
 }
 
 function getOutClicked(){
-    location.assign('index.html')
+    location.assign('index.html' +'?'+totalAttens)
 }

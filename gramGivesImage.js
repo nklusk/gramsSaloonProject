@@ -10,6 +10,6 @@ function setup() {
 
 
 function mousePressed() {
-  location.assign("gramGivesImageMenu.html"); 
+  location.assign("gramGivesImageMenu.html" +'?'+totalAttens); 
   
 }

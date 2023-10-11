@@ -9,5 +9,5 @@ function setup() {
 }
 
 function atmPressed() {
-    location.assign('ATMinterface.html');
+    location.assign('ATMinterface.html' +'?'+totalAttens);
 }

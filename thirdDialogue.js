@@ -13,6 +13,6 @@ function draw() {
 }
 
 function mousePressed() {
-  location.assign("optionMenu.html"); 
+  location.assign("optionMenu.html" +'?'+totalAttens); 
   
 }

@@ -19,7 +19,7 @@ function draw() {
 }
 
 function mousePressed() {
-    location.assign("ATMinterface.html"); 
+    location.assign("ATMinterface.html" +'?'+totalAttens); 
     
   }
   

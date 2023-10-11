@@ -7,6 +7,7 @@ let displayAttens;
 let attensDiv;
 let randomNumber;
 let shownAd;
+let backToGramPage;
 
 // function preload() {
 
@@ -63,8 +64,9 @@ function watchAdclicked() {
 }
 
 function backToGramClicked() {
+   
     //location.assign('secondDialogue.html?attens=' + totalAttens);
-location.assign('thirdDialogue.html');
+location.assign('thirdDialogue.html' +'?'+totalAttens);
 
 
 

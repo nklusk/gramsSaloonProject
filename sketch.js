@@ -18,7 +18,7 @@ function draw() {
 }
 
 function mousePressed() {
-  location.assign("firstDialogue.html"); 
+  location.assign("firstDialogue.html" +'?'+totalAttens); 
   
 }
 

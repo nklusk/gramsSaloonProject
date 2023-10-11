@@ -29,7 +29,7 @@ function setup() {
   }
   
   function noButtonPressed() {
-    location.assign("optionMenu.html"); 
+    location.assign("optionMenu.html" +'?'+totalAttens); 
     
   }
   
