@@ -2,6 +2,7 @@ let yesButton;
 let noButton;
 let sampleGramPic;
 let sampleGramPic2;
+let randomNumber;
 
 function setup() {
 
@@ -33,7 +34,9 @@ function setup() {
   }
   
   function yesButtonPressed(){
-sampleGramPic2 = createImg("assets/sampleGramPic2.png")
-    sampleGramPic2.position(504, 89)
+    randomNumber = floor(random(1, 13));
+sampleGramPic2 = createImg("assets/gramPic"+randomNumber+".png");
+    sampleGramPic2.position(504, 89);
+    console.log(randomNumber);
 
   }
